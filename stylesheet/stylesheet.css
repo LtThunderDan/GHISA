@@ -5,7 +5,6 @@ body {
 }
 h2 {
     font-size: 24px;
-    text-transform: uppercase;
     color: black;
     font-weight: 600;
     margin-bottom: 30px;
@@ -18,7 +17,7 @@ h4 {
     margin-bottom: 30px;
 }
 .bg {
-  background: url('../images/agriculture-arable-barley-265242.jpg') no-repeat center center;
+  background: url('../images/agriculture-citrus-close-up-129574.jpg') no-repeat 65% 50%;
   position: absolute;
   width: 100%;
   height: 500px; /*same height as jumbotron */
@@ -46,19 +45,23 @@ h4 {
     color: #355234;
     font-size: 200px;
 }
-.thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
+/*********************** Carousel Stuff ****************************/
+.carousel {
+  background-color: white;
+  color: white;
 }
-.thumbnail img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
+.carousel-control.right {
+  background-image: none;
+  color: #355234;
+  left:93%;
 }
-.carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #355234;
+.carousel-control.left {
+  background-image: none;
+  color: #355234;
+  left:-8%;
+}
+.carousel-indicators {
+    bottom:-50px;
 }
 .carousel-indicators li {
     border-color: #355234;
@@ -66,6 +69,10 @@ h4 {
 .carousel-indicators li.active {
     background-color: #355234;
 }
+.carousel-inner>.active {
+  background-color: white;
+}
+/*********************** End of Carousel Stuff ***********************/
 
 /************************* Collapsible Stuff *************************/
 .collapsible {
@@ -79,31 +86,10 @@ h4 {
     outline: none;
     font-size: 15px;
 }
-.collapsible-wh {
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-}
 .active, .collapsible:hover {
     background-color: #f6f6f6;
 }
-/* .active, .collapsible-wh:hover {
-    background-color: white;
-} */
 .collapsible:after {
-    content: '\002B';
-    color: black;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-.collapsible-wh:after {
     content: '\002B';
     color: black;
     font-weight: bold;
@@ -120,14 +106,11 @@ h4 {
     transition: max-height 0.2s ease-out;
     background-color: #f6f6f6;
 }
-.content-wh {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color:white;
+.container-fluid:not(.bg-grey) .collapsible,
+.container-fluid:not(.bg-grey) .content {
+  background-color: white;
 }
-/************************* Collapsible Stuff End *************************/
+/*********************** End of Collapsible Stuff ************************/
 
 .item h4 {
     font-size: 19px;
@@ -204,7 +187,9 @@ footer .glyphicon {
     margin-bottom: 20px;
     color: #355234;
 }
-.slideanim {visibility:hidden;}
+.slideanim {
+  visibility:hidden;
+}
 .slide {
     animation-name: slide;
     -webkit-animation-name: slide;
