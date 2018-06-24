@@ -53,12 +53,12 @@ h4 {
 .carousel-control.right {
   background-image: none;
   color: #355234;
-  left:93%;
+  left:95%;
 }
 .carousel-control.left {
   background-image: none;
   color: #355234;
-  left:-8%;
+  left:-10%;
 }
 .carousel-indicators {
     bottom:-50px;
