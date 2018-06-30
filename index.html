@@ -17,27 +17,24 @@
   <script src="script/popover.js"></script>
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar">
 <nav class="navbar navbar-default">
-  <div class="container">
+  <div class="container-nav">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <center>
-        <a class="navbar-brand" href="https://www.usgs.gov/"><img src="images/logo.png" width="55%" height="125%"/></a>
-      </center>
+        <a class="navbar-brand" href="https://www.usgs.gov/"><img src="images/logo_reduced.png"/></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav">
         <li><a href="index.html">HOME</a></li>
         <li><a href="ghisa.html">GHISA</a></li>
         <li><a href="publications.html">PUBLICATIONS</a></li>
         <li><a href="presentations.html">PRESENTATIONS</a></li>
         <li><a href="tables.html">TABLES</a></li>
         <li><a href="bio.html">BIO</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="register.html">REGISTER</a></li>
+        <li><a href="login.html">LOGIN</a></li>
       </ul>
     </div>
   </div>
@@ -46,71 +43,10 @@
 <div class="bg"></div>
   <div class="jumbotron">
     <center>
-      <h1>GHISA</h1>
-      <p>Global Hyperspectral Imaging Spectroscopy of Agricultural-Crops & Vegetation</p>
+      <h1>Global Hyperspectral Imaging Spectroscopy of Agricultural-Crops and Vegetation</h1>
       <p>Advances of Last 50 Years of Research</p>
     </center>
   </div>
-
-<!-- CAROUSEL -->
-<div class="container">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <div class="col-md-4">
-          <img src="hyperspectral-web-page/02-images/Slide001.JPG" style="width:100%;">
-        </div>
-        <div class="col-md-4">
-          <img src="hyperspectral-web-page/02-images/Slide2.JPG" style="width:100%;">
-        </div>
-        <div class="col-md-4">
-          <img src="hyperspectral-web-page/02-images/Slide002.JPG" style="width:100%;">
-        </div>
-      </div>
-      <div class="item">
-        <div class="col-md-4">
-          <img src="hyperspectral-web-page/02-images/Slide003.JPG" style="width:100%;">
-        </div>
-        <div class="col-md-4">
-          <img src="hyperspectral-web-page/02-images/Slide005.JPG" style="width:100%;">
-        </div>
-        <div class="col-md-4">
-          <img src="hyperspectral-web-page/02-images/Slide006.png" style="width:100%;">
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="col-md-4">
-          <img src="hyperspectral-web-page/02-images/Slide007.JPG" style="width:100%;">
-        </div>
-        <div class="col-md-4">
-          <img src="hyperspectral-web-page/02-images/Slide008.gif" style="width:100%;">
-        </div>
-        <div class="col-md-4">
-          <img src="hyperspectral-web-page/02-images/Slide009.jpg" style="width:106%;">
-        </div>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
-  </div>
-</div>
-
-<!-- CAROUSEL END -->
 
 <div id="about" class="container-fluid">
   <div class="row">
@@ -158,7 +94,7 @@
       </div>
 
       <!-- Table 2 Button -->
-      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Table 2</button> -->
+      <a href="hyperspectral-web-page/07-Tables/Table-2-hyperspectral-sensor-characteristics.jpg" download="Table-2-hyperspectral-sensor-characteristics.jpg"><button type="button" class="btn btn-primary">Download Table 2</button></a>
       <!-- The Modal -->
       <div class="modal" id="myModal2">
         <div class="modal-lg">
@@ -185,7 +121,7 @@
     </div>
     <div class="col-sm-4">
       <center>
-        <img src="images/ianeece_w_fieldspec.JPG" width="50%" height="250">
+        <img src="images/ianeece_w_fieldspec_reduced.jpg">
       </center>
     </div>
   </div>
@@ -195,7 +131,7 @@
   <div class="row">
     <div class="col-sm-4">
       <center>
-        <img src="images/hyperspectral_book.jpg" width="50%" height="250">
+        <img src="images/hyperspectral_book1.jpg">
       </center>
     </div>
     <div class="col-sm-8">
@@ -232,7 +168,7 @@
       <br>
 
       <!-- Table 1 Button -->
-      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Table 1</button> -->
+      <a href="hyperspectral-web-page/07-Tables/Table 1-cropland-areas.JPG" download="Table 1-cropland-areas.JPG"><button type="button" class="btn btn-primary">Download Table 1</button></a>
       <!-- The Modal -->
       <div class="modal" id="myModal1">
         <div class="modal-dialog">
@@ -259,7 +195,7 @@
     </div>
     <div class="col-sm-4">
       <center>
-        <img src="images/GHISA_graph_example.PNG"  alt="Prasad" width="70%" height="100%">
+        <img src="images/GHISA_graph_example_reduced.png">
       </center>
     </div>
   </div>
@@ -420,7 +356,7 @@
       <br><br>
 
       <!-- Table 3 Button -->
-      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">Table 3</button> -->
+      <a href="hyperspectral-web-page/07-Tables/table-3-HVIs.png" download="table-3-HVIs.png"><button type="button" class="btn btn-primary">Download Table 3</button></a>
       <!-- The Modal -->
       <div class="modal" id="myModal3">
         <div class="modal-lg">
@@ -446,7 +382,7 @@
       </div>
 
       <!-- Table 4 Button -->
-      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4">Table 4</button> -->
+      <a href="hyperspectral-web-page/07-Tables/Table-4-optimal-HNBs.png" download="Table-4-optimal-HNBs.png"><button type="button" class="btn btn-primary">Download Table 4</button></a>
       <!-- The Modal -->
       <div class="modal" id="myModal4">
         <div class="modal-lg">
@@ -472,7 +408,7 @@
       </div>
 
       <!-- Table 5 Button -->
-      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">Table 5</button> -->
+      <a href="hyperspectral-web-page/07-Tables/Table-5-best-bands.png" download="Table-5-best-bands.png"><button type="button" class="btn btn-primary">Download Table 5</button></a>
       <!-- The Modal -->
       <div class="modal" id="myModal5">
         <div class="modal-lg">
@@ -499,7 +435,7 @@
     </div>
     <div class="col-sm-4">
       <center>
-        <img src="images/hvis_example.png"  alt="Prasad" width="85%" height="250">
+        <img src="images/hvis_example_reduced.png">
       </center>
     </div>
   </div>
@@ -509,10 +445,11 @@
   <div class="row">
     <div class="col-sm-4">
       <center>
-        <img src="hyperspectral-web-page/05-bios-and-photos/photo-thenkabail.JPG" alt="Prasad" width="250" height="250">
+        <img src="hyperspectral-web-page/05-bios-and-photos/photo-thenkabail1.JPG">
       </center>
     </div>
     <div class="col-sm-8">
+      <br><br>
       This research is led by <strong>Dr. Prasad S. Thenkabail</strong>, Research Geographer @
       the United States Geological Survey (USGS) and his team of researchers at
       various time periods: Dr. Michael Marshall (2013-2016) who is currently
@@ -528,6 +465,69 @@
     </div>
   </div>
 </div>
+<br>
+
+<!-- CAROUSEL -->
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="col-md-4">
+          <img src="hyperspectral-web-page/02-images/Slide001.JPG" style="width:100%;">
+        </div>
+        <div class="col-md-4">
+          <img src="hyperspectral-web-page/02-images/Slide2.JPG" style="width:100%;">
+        </div>
+        <div class="col-md-4">
+          <img src="hyperspectral-web-page/02-images/Slide002.JPG" style="width:100%;">
+        </div>
+      </div>
+      <div class="item">
+        <div class="col-md-4">
+          <img src="hyperspectral-web-page/02-images/Slide003.JPG" style="width:100%;">
+        </div>
+        <div class="col-md-4">
+          <img src="hyperspectral-web-page/02-images/Slide005.JPG" style="width:100%;">
+        </div>
+        <div class="col-md-4">
+          <img src="hyperspectral-web-page/02-images/Slide006.png" style="width:100%;">
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="col-md-4">
+          <img src="hyperspectral-web-page/02-images/Slide007.JPG" style="width:100%;">
+        </div>
+        <div class="col-md-4">
+          <img src="hyperspectral-web-page/02-images/Slide008.gif" style="width:100%;">
+        </div>
+        <div class="col-md-4">
+          <img src="hyperspectral-web-page/02-images/Slide009.jpg" style="width:106%;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</div>
+
+<!-- CAROUSEL END -->
+<br>
+<br>
 
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
